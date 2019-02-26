@@ -9,4 +9,6 @@ RUN apt-get clean && \
     apt-get install -y python-pip git pandoc
 
 RUN pip install --upgrade pip setuptools
-RUN pip install virtualenv twine gitchangelog
+RUN pip install twine gitchangelog yolk3k cmp_version
+
+RUN useradd -lm vop999
