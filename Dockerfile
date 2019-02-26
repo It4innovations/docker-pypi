@@ -10,3 +10,5 @@ RUN apt-get clean && \
 
 RUN pip install --upgrade pip setuptools
 RUN pip install twine gitchangelog yolk3k cmp_version
+
+RUN useradd -lm vop999
