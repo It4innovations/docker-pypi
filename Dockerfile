@@ -7,9 +7,10 @@ ENV LANG en_US.utf8
 
 RUN apt-get clean && \
     apt-get update -y && \
-    apt-get install -y python-pip git pandoc
+    apt-get install -y git pandoc python-pip virtualenv
 
 RUN pip install --upgrade pip setuptools
 RUN pip install twine gitchangelog yolk3k cmp_version
+RUN pip install setuptools-git-version setuptools-markdown
 
 RUN useradd -lm vop999
