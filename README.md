@@ -1,3 +1,3 @@
 # docker-pypi
 
-Latest Ubuntu with Pypi apps
+Latest Debian with Pypi apps
